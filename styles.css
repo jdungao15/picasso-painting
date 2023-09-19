@@ -36,34 +36,34 @@ body {
 }
 
 .dot-two {
-  top: 18rem;
+  top: 14rem;
   left: 5rem;
 }
 .dot-three,
 .dot-four {
   border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
   position: absolute;
 }
 
 .dot-three {
   background-color: #d5bfbf;
   right: -9rem;
-  top: 20rem;
+  top: 13rem;
   z-index: 1;
 }
 .dot-four {
   z-index: 1;
   background-color: paleturquoise;
-  right: 10rem;
-  top: 10rem;
+  right: 4rem;
+  top: 1rem;
 }
 
 .dot-five {
-  top: 34rem;
+  top: 25rem;
   left: 19rem;
-  background-color: pink;
+  background-color: paleturquoise;
 }
 
 .dot-six {
@@ -76,4 +76,5 @@ body {
   background-color: #35a29f;
   grid-column: 1 / 4;
   grid-row: 2 / 4;
+  margin-bottom: 1rem;
 }
