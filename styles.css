@@ -1,0 +1,79 @@
+body {
+  background-color: aliceblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 95vw;
+  height: 80vh;
+  margin: 10rem auto 0 auto;
+  border-bottom: 1rem solid #f2f7a1;
+  gap: 2rem;
+}
+.box {
+  background-color: #35a29f;
+  grid-gap: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+.dot-one,
+.dot-two,
+.dot-five,
+.dot-six {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background-color: #aa77ff;
+  position: absolute;
+}
+
+.dot-one {
+  top: 1rem;
+  left: 5rem;
+}
+
+.dot-two {
+  top: 18rem;
+  left: 5rem;
+}
+.dot-three,
+.dot-four {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+}
+
+.dot-three {
+  background-color: #d5bfbf;
+  right: -9rem;
+  top: 20rem;
+  z-index: 1;
+}
+.dot-four {
+  z-index: 1;
+  background-color: paleturquoise;
+  right: 10rem;
+  top: 10rem;
+}
+
+.dot-five {
+  top: 34rem;
+  left: 19rem;
+  background-color: pink;
+}
+
+.dot-six {
+  top: 4rem;
+  left: 52rem;
+  z-index: 1;
+}
+
+.largeBox {
+  background-color: #35a29f;
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+}
