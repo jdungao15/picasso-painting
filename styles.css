@@ -24,8 +24,8 @@ body {
   .dot-five,
   .dot-six {
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: #aa77ff;
     position: absolute;
   }
@@ -88,7 +88,7 @@ body {
     border-left: 14vw solid transparent;
     border-right: 15vw solid transparent;
     border-bottom: 60vh solid #4a47a3;
-    margin-left: 40rem;
+    margin-right: 14vw;
     z-index: 2;
   }
 
@@ -102,4 +102,68 @@ body {
     border-bottom: 41vh solid #e7d9ea;
     z-index: 2;
   }
+}
+
+.family-tree {
+  width: 60vw;
+}
+
+.person {
+  text-align: center;
+  width: 100px;
+}
+.head {
+  background-color: #d4ecdd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 3px auto;
+}
+.upper-body {
+  display: flex;
+  justify-content: center;
+}
+
+.arm-left,
+.arm-right {
+  background-color: #d4ecdd;
+  width: 15px;
+  height: 50px;
+}
+
+.arm-left {
+  margin-top: -3px;
+  border-radius: 50% 0% 50% 50% / 26% 15% 15% 20%;
+  transform: rotate(35deg);
+}
+.arm-right {
+  margin-top: -3px;
+  margin-left: 1px;
+  border-radius: 0% 50% 50% 50% / 26% 15% 15% 20%;
+  transform: rotate(-35deg);
+}
+
+.torso {
+  border-radius: 15% 6% 50% 50% / 26% 26% 0% 0%;
+  background-color: #d4ecdd;
+  width: 40px;
+  height: 60px;
+  z-index: 1;
+}
+.lower-body {
+  display: flex;
+}
+.leg-left {
+  margin-left: 30px;
+  background-color: #d4ecdd;
+  width: 15px;
+  height: 55px;
+  border-radius: 0% 0% 50% 50% / 26% 26% 10% 10%;
+}
+.leg-right {
+  background-color: #d4ecdd;
+  border-radius: 0% 0% 50% 50% / 26% 26% 10% 10%;
+  width: 15px;
+  height: 55px;
+  margin-left: 10px;
 }
