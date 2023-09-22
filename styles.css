@@ -74,7 +74,7 @@ body {
 
   .largeBox {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: end;
     background-color: #35a29f;
     grid-column: 1 / 4;
@@ -83,6 +83,8 @@ body {
   }
 
   .mountain-one {
+    right: 3vh;
+    position: absolute;
     width: 0;
     height: 0;
     border-left: 14vw solid transparent;
@@ -105,7 +107,9 @@ body {
 }
 
 .family-tree {
+  display: flex;
   width: 60vw;
+  z-index: 500;
 }
 
 .person {
@@ -166,4 +170,12 @@ body {
   width: 15px;
   height: 55px;
   margin-left: 10px;
+}
+
+.group-two > div * {
+  background-color: #272829;
+}
+
+.group-two > div.head {
+  background-color: #272829;
 }
