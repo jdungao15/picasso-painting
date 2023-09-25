@@ -11,6 +11,7 @@ body {
     margin: 10rem auto 0 auto;
     border-bottom: 1rem solid #f2f7a1;
     gap: 2rem;
+    position: relative;
   }
   .box {
     background-color: #35a29f;
@@ -24,40 +25,40 @@ body {
   .dot-five,
   .dot-six {
     border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
+    width: calc(1.3em + 3vw);
+    height: calc(1.3em + 3vw);
     background-color: #aa77ff;
     position: absolute;
   }
 
   .dot-one {
-    top: 1rem;
-    left: 5rem;
+    top: 10%;
+    left: 17%;
   }
 
   .dot-two {
-    top: 14rem;
-    left: 5rem;
+    top: 83%;
+    left: 17%;
   }
   .dot-three,
   .dot-four {
     border-radius: 50%;
-    width: 13rem;
-    height: 13rem;
+    width: calc(1.5rem + 10vw);
+    height: calc(1.5rem + 10vw);
     position: absolute;
   }
 
   .dot-three {
     background-color: #d5bfbf;
-    right: -8vw;
-    top: 15vh;
+    right: -25%;
+    top: 75%;
     z-index: 1;
   }
   .dot-four {
     z-index: 1;
     background-color: paleturquoise;
-    right: 4rem;
-    top: 1rem;
+    right: 10%;
+    top: 10%;
   }
 
   .dot-five {
@@ -73,6 +74,7 @@ body {
   }
 
   .largeBox {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: end;
@@ -83,25 +85,25 @@ body {
   }
 
   .mountain-one {
-    right: 3vh;
+    right: 13%;
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 14vw solid transparent;
-    border-right: 15vw solid transparent;
-    border-bottom: 60vh solid #4a47a3;
-    margin-right: 14vw;
+    border-left: 14rem solid transparent;
+    border-right: 15rem solid transparent;
+    border-bottom: 40rem solid #4a47a3;
+
     z-index: 2;
   }
 
   .mountain-two {
     position: absolute;
-    right: 4vh;
+    right: 0;
     width: 0;
     height: 0;
-    border-left: 12vw solid transparent;
-    border-right: 13vw solid transparent;
-    border-bottom: 41vh solid #e7d9ea;
+    border-left: 12rem solid transparent;
+    border-right: 12rem solid transparent;
+    border-bottom: 25rem solid #e7d9ea;
     z-index: 2;
   }
 }
@@ -131,18 +133,18 @@ body {
 .arm-left,
 .arm-right {
   background-color: #d4ecdd;
-  width: 15px;
-  height: 50px;
+  width: 0.8rem;
+  height: 2.9rem;
 }
 
 .arm-left {
-  margin-top: -3px;
+  margin-top: -3%;
   border-radius: 50% 0% 50% 50% / 26% 15% 15% 20%;
   transform: rotate(35deg);
 }
 .arm-right {
-  margin-top: -3px;
-  margin-left: 1px;
+  margin-top: -3%;
+  margin-left: 1%;
   border-radius: 0% 50% 50% 50% / 26% 15% 15% 20%;
   transform: rotate(-35deg);
 }
@@ -150,26 +152,26 @@ body {
 .torso {
   border-radius: 15% 6% 50% 50% / 26% 26% 0% 0%;
   background-color: #d4ecdd;
-  width: 40px;
-  height: 60px;
+  width: 2rem;
+  height: 3.5rem;
   z-index: 1;
 }
 .lower-body {
   display: flex;
 }
 .leg-left {
-  margin-left: 30px;
+  margin-left: 1.7rem;
   background-color: #d4ecdd;
-  width: 15px;
-  height: 55px;
+  width: 0.85rem;
+  height: 3.5rem;
   border-radius: 0% 0% 50% 50% / 26% 26% 10% 10%;
 }
 .leg-right {
   background-color: #d4ecdd;
   border-radius: 0% 0% 50% 50% / 26% 26% 10% 10%;
-  width: 15px;
-  height: 55px;
-  margin-left: 10px;
+  width: 0.85rem;
+  height: 3.5rem;
+  margin-left: 0.3rem;
 }
 
 .group-two > div * {
