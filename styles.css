@@ -183,6 +183,7 @@ body {
   background-color: #272829;
 }
 
+/* DESKTOP */
 @media (max-width: 1680px) {
   .container {
     display: grid;
@@ -294,14 +295,69 @@ body {
     height: 3em;
   }
 
-  .arm-left, .arm-right {
+  .arm-left,
+  .arm-right {
     width: 2.5em;
     height: 2.5em;
   }
 
-  .leg-left, .leg-right {
-    width: .7em;
+  .leg-left,
+  .leg-right {
+    width: 0.7em;
     height: 3em;
   }
- 
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  /* mountains */
+  .mountain-one {
+    right: 4%;
+    border-left: 15em solid transparent;
+    border-right: 15em solid transparent;
+    border-bottom: 45em solid #4a47a3;
+  }
+
+  .mountain-two {
+    border-left: 13em solid transparent;
+    border-right: 12em solid transparent;
+    border-bottom: 35em solid #e7d9ea;
+    z-index: 2;
+  }
+
+  .family-tree {
+    width: calc(100% - 370px);
+  }
+
+  /* Person */
+  .person {
+    width: 10%;
+    margin: 0;
+  }
+  .head {
+    background-color: #d4ecdd;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin: 0 auto 3px auto;
+  }
+
+  .arm-left,
+  .arm-right {
+    width: 1em;
+    height: 3em;
+  }
+  .torso {
+    width: 2em;
+    height: 2.5em;
+  }
+  .lower-body {
+    height: 3em;
+  }
+  .leg-left, .leg-right {
+        width: 0.9em;
+    height: 3.4em;
+    margin-top: -0.4em;
+}
+  }
 }
