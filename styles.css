@@ -287,4 +287,21 @@ body {
     border-bottom: 36rem solid #e7d9ea;
     z-index: 2;
   }
+
+  /* Persons */
+  .torso {
+    width: 5em;
+    height: 3em;
+  }
+
+  .arm-left, .arm-right {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .leg-left, .leg-right {
+    width: .7em;
+    height: 3em;
+  }
+ 
 }
