@@ -1,6 +1,188 @@
 body {
   background-color: aliceblue;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 95vw;
+  height: 80vh;
+  margin: 10rem auto 0 auto;
+  border-bottom: 1rem solid #f2f7a1;
+  gap: 2rem;
+  position: relative;
+}
+.box {
+  background-color: #35a29f;
+  grid-gap: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+.dot-one,
+.dot-two,
+.dot-five,
+.dot-six {
+  border-radius: 50%;
+  width: calc(1.3em + 3vw);
+  height: calc(1.3em + 3vw);
+  background-color: #aa77ff;
+  position: absolute;
+}
+
+.dot-one {
+  top: 10%;
+  left: 17%;
+}
+
+.dot-two {
+  top: 83%;
+  left: 17%;
+  z-index: 3;
+}
+.dot-three,
+.dot-four {
+  border-radius: 50%;
+  width: calc(1.5rem + 10vw);
+  height: calc(1.5rem + 10vw);
+  position: absolute;
+}
+
+.dot-three {
+  background-color: #d5bfbf;
+  right: -25%;
+  top: 75%;
+  z-index: 1;
+}
+.dot-four {
+  z-index: 1;
+  background-color: paleturquoise;
+  right: 14%;
+  top: 1%;
+}
+
+.dot-five {
+  top: 35vh;
+  left: 14vw;
+  background-color: paleturquoise;
+}
+
+.dot-six {
+  top: 4rem;
+  left: 40vw;
+  z-index: 1;
+}
+
+.largeBox {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  background-color: #35a29f;
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  margin-bottom: 1rem;
+}
+
+.mountain-one {
+  right: 13%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 25em solid transparent;
+  border-right: 25em solid transparent;
+  border-bottom: 50em solid #4a47a3;
+
+  z-index: 2;
+}
+
+.mountain-two {
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 20em solid transparent;
+  border-right: 20em solid transparent;
+  border-bottom: 35em solid #e7d9ea;
+  z-index: 2;
+}
+
+.family-tree {
+  display: flex;
+  width: calc(100% - 570px);
+  z-index: 500;
+}
+
+.person {
+  text-align: center;
+  width: 5%;
+  margin: 0 2%;
+}
+.head {
+  background-color: #d4ecdd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 3px auto;
+}
+.upper-body {
+  display: flex;
+  justify-content: center;
+}
+
+.arm-left,
+.arm-right {
+  background-color: #d4ecdd;
+  width: 1em;
+  height: 3.5em;
+}
+
+.arm-left {
+  margin-top: -3%;
+  border-radius: 50% 0% 50% 50% / 26% 15% 15% 20%;
+  transform: rotate(35deg);
+}
+.arm-right {
+  margin-top: -3%;
+  margin-left: 1%;
+  border-radius: 0% 50% 50% 50% / 26% 15% 15% 20%;
+  transform: rotate(-35deg);
+}
+
+.torso {
+  border-radius: 15% 6% 50% 50% / 26% 26% 0% 0%;
+  background-color: #d4ecdd;
+  width: 2.2em;
+  height: 4em;
+  z-index: 1;
+}
+.lower-body {
+  display: flex;
+  justify-content: center;
+}
+.leg-left {
+  background-color: #d4ecdd;
+  width: 1em;
+  height: 4em;
+  border-radius: 0% 0% 50% 50% / 26% 26% 10% 10%;
+}
+.leg-right {
+  background-color: #d4ecdd;
+  border-radius: 0% 0% 50% 50% / 26% 26% 10% 10%;
+  width: 1em;
+  height: 4em;
+  margin-left: 0.1em;
+}
+
+.group-two > div * {
+  background-color: #272829;
+}
+
+.group-two > div.head {
+  background-color: #272829;
+}
+
 @media (max-width: 1680px) {
   .container {
     display: grid;
@@ -57,8 +239,8 @@ body {
   .dot-four {
     z-index: 1;
     background-color: paleturquoise;
-    right: 10%;
-    top: 10%;
+    right: 14%;
+    top: 1%;
   }
 
   .dot-five {
@@ -85,14 +267,13 @@ body {
   }
 
   .mountain-one {
-    right: 13%;
+    right: 8%;
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 14rem solid transparent;
-    border-right: 15rem solid transparent;
-    border-bottom: 40rem solid #4a47a3;
-
+    border-left: 20em solid transparent;
+    border-right: 20em solid transparent;
+    border-bottom: 49em solid #4a47a3;
     z-index: 2;
   }
 
@@ -101,83 +282,9 @@ body {
     right: 0;
     width: 0;
     height: 0;
-    border-left: 12rem solid transparent;
-    border-right: 12rem solid transparent;
-    border-bottom: 25rem solid #e7d9ea;
+    border-left: 14em solid transparent;
+    border-right: 14em solid transparent;
+    border-bottom: 36rem solid #e7d9ea;
     z-index: 2;
   }
-}
-
-.family-tree {
-  display: flex;
-  width: 60vw;
-  z-index: 500;
-}
-
-.person {
-  text-align: center;
-  width: 100px;
-}
-.head {
-  background-color: #d4ecdd;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0 auto 3px auto;
-}
-.upper-body {
-  display: flex;
-  justify-content: center;
-}
-
-.arm-left,
-.arm-right {
-  background-color: #d4ecdd;
-  width: 0.8rem;
-  height: 2.9rem;
-}
-
-.arm-left {
-  margin-top: -3%;
-  border-radius: 50% 0% 50% 50% / 26% 15% 15% 20%;
-  transform: rotate(35deg);
-}
-.arm-right {
-  margin-top: -3%;
-  margin-left: 1%;
-  border-radius: 0% 50% 50% 50% / 26% 15% 15% 20%;
-  transform: rotate(-35deg);
-}
-
-.torso {
-  border-radius: 15% 6% 50% 50% / 26% 26% 0% 0%;
-  background-color: #d4ecdd;
-  width: 2rem;
-  height: 3.5rem;
-  z-index: 1;
-}
-.lower-body {
-  display: flex;
-}
-.leg-left {
-  margin-left: 1.7rem;
-  background-color: #d4ecdd;
-  width: 0.85rem;
-  height: 3.5rem;
-  border-radius: 0% 0% 50% 50% / 26% 26% 10% 10%;
-}
-.leg-right {
-  background-color: #d4ecdd;
-  border-radius: 0% 0% 50% 50% / 26% 26% 10% 10%;
-  width: 0.85rem;
-  height: 3.5rem;
-  margin-left: 0.3rem;
-}
-
-.group-two > div * {
-  background-color: #272829;
-}
-
-.group-two > div.head {
-  background-color: #272829;
 }
